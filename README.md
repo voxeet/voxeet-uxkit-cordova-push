@@ -1,4 +1,4 @@
-# Voxeet UXKit Cordova
+# Voxeet UXKit Cordova Push
 
 ## SDK License agreement
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  VoxeetUXKit Cordova
+  Copyright (C) 2020
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="cordova-plugin-voxeet-push"
+      version="0.0.1">
+    <name>Voxeet</name>
+    <description>Cordova Voxeet Plugin for FCM</description>
+    <license>Apache 2.0 License</license>
+    <keywords>cordova,voxeet</keywords>
+    <repo>https://github.com/voxeet/voxeet-uxkit-cordova-push.git</repo>
+    <issue>https://github.com/voxeet/voxeet-uxkit-cordova-push/issues</issue>
+
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="com.voxeet.uxkit.cordova.push.CordovaVoxeetPushMessagingService">
+                <intent-filter priority="999">
+                    <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                </intent-filter>
+            </service>
+        </config-file>
+
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+
+        <source-file src="src/android/com/voxeet/uxkit/cordova/push/CordovaVoxeetPushMessagingService.java" target-dir="src/android/com/voxeet/uxkit/cordova/push" />
+    </platform>
+</plugin>

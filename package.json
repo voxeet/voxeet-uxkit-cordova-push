@@ -1,0 +1,57 @@
+{
+  "name": "cordova-plugin-voxeet-push",
+  "version": "0.0.1",
+  "description": "Cordova Voxeet Plugin Push",
+  "cordova": {
+    "id": "cordova-plugin-voxeet-push",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voxeet/voxeet-uxkit-cordova-push"
+  },
+  "bugs": {
+    "url": "https://github.com/voxeet/voxeet-uxkit-cordova-push/issues"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "voxeet",
+    "cordova-android",
+    "dolby"
+  ],
+  "scripts": {
+    "test": "npm run eslint",
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests",
+  },
+  "author": "Voxeet",
+  "license": "MIT",
+  "engines": {
+    "cordova": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jshint": "^2.6.0",
+    "tslib": "^1.9.3",
+    "typescript": "^4.2.2"
+  },
+  "files": [
+    "package.json",
+    "src/",
+    "www/",
+    "README.md",
+    "plugin.xml",
+    "RELEASENOTES.md",
+    "NOTICE"
+  ],
+  "dependencies": {}
+}
