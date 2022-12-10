@@ -18,7 +18,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
       id="cordova-plugin-voxeet-push"
-      version="0.0.1">
+      version="0.1.0">
     <name>Voxeet</name>
     <description>Cordova Voxeet Plugin for FCM</description>
     <license>Apache 2.0 License</license>
