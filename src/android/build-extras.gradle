@@ -19,10 +19,6 @@ repositories {
 }
 
 android {
-    defaultConfig {
-        // Enabling multidex support.
-        multiDexEnabled true
-    }
     dexOptions {
         jumboMode true
         incremental true
@@ -31,6 +27,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:multidex:1.0.3'
-    compile 'io.dolby:uxkit-firebase:3.7.5'
+    implementation 'io.dolby:uxkit-firebase:3.7.5'
 }
