@@ -30,7 +30,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="com.voxeet.uxkit.cordova.push.CordovaVoxeetPushMessagingService">
+            <service android:exported="true" android:name="com.voxeet.uxkit.cordova.push.CordovaVoxeetPushMessagingService">
                 <intent-filter priority="999">
                     <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 </intent-filter>
