@@ -39,6 +39,6 @@
 
         <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
 
-        <source-file src="src/android/com/voxeet/uxkit/cordova/push/CordovaVoxeetPushMessagingService.java" target-dir="src/android/com/voxeet/uxkit/cordova/push" />
+        <source-file src="src/android/com/voxeet/uxkit/cordova/push/CordovaVoxeetPushMessagingService.java" target-dir="src/com/voxeet/uxkit/cordova/push" />
     </platform>
 </plugin>
