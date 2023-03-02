@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-voxeet-push",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Cordova Voxeet Plugin Push",
   "cordova": {
     "id": "cordova-plugin-voxeet-push",
